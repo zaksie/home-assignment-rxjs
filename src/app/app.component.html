@@ -1,0 +1,12 @@
+<table *ngIf="rows$ | async as rows">
+  <tr>
+    <th>Venue</th>
+    <th>Average price</th>
+    <th>Total size</th>
+  </tr>
+  <tr *ngFor="let row of rows">
+    <td>{{row.venue}}</td>
+    <td>{{row.avgPrice}}</td>
+    <td>{{row.size}}</td>
+  </tr>
+</table>
